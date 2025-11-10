@@ -1,15 +1,81 @@
+<!-- Meredith Sauer -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="MPLS Dog Boarding Home Page">
+        <meta name="keywords" content="Dog Boarding, Dog Sitting, Dog Care">
+        <meta name="author" content="Meredith Sauer">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MPLS Dogboarding </title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <style>
-        
+            #container {
+                display: grid;
+                width: 100vw;
+                height: 100vh;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: 105px auto 15%;
+            }
+            header {
+                grid-column-start: 1;
+                grid-column-end: 4; 
+                grid-row: 1;          
+            }
+            main {
+                grid-column-start: 1;
+                grid-column-end: 4; 
+                grid-row: 2;
+
+            }
+            footer {
+                grid-column-start: 1;
+                grid-column-end: 4;   
+                grid-row: 3;
+                padding-top: 40px;
+            }
+            img {
+                display: block;
+                width: 20%;
+                margin: auto;
+            }
+            #flexcontainer {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                background-image: url("img/dog_bg.jpeg");
+                background-position: center;
+                background-size: cover;
+            }
+            aside {
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 325px;
+                height: 350px;
+                padding: 10px;
+                margin-top: 4%;
+                margin-bottom: 4%;
+                margin-left: 2%;
+                margin-right: 2%;
+                background-color: #ffffffcf;
+                border-radius: 10px;
+                float: left;
+            }
+            body {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+            }
+            #copyright {
+                width: 275px;
+                margin: auto;
+            }
+            
         </style>
     </head>
     <body>
         <div id="container">
             <header>
-                <img src="" alt="">
+                <img src="img/mpls_dog_logo.png" alt="MLPS company logo">
             </header>
             <main id="flexcontainer">
                 <aside>
@@ -21,7 +87,7 @@
                     <h3>Weekly Boarding</h3>
                     <p>$425 - 7 days [24 hours from drop-off time] </li>
                     <h3>Daily Rate: </h3>
-                    <p>$75 - 1 day [24 hours from drop-off time</p>
+                    <p>$75 - 1 day [24 hours from drop-off time]</p>
                     
                     </ul>
                 </aside>
