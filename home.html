@@ -11,22 +11,28 @@
         <style>
             #container {
                 display: grid;
-                grid-template-rows: 105px auto 15%;
-                grid-template-columns: 1fr 1fr 1fr;
                 width: 10vw;
                 height: 100vh;
+                grid-template-rows: 105px auto 15%;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas: 
+                    "header header header"
+                    "main main main"
+                    "footer footer footer";
             }
             header {
-               grid-column: 1 / span 1;
-               grid-row: 1 / span 3; 
+               grid-column: 1 / span 3;
+               grid-row: 1 / span 1;
+                           
             }
             main {
-                grid-column: 1 / span 1;
-                grid-row: 2 / span 3;
+                grid-column: 1 / span 3;
+                grid-row: 2 / span 1;
+                border-width: 10px;
             }
             footer {
-                grid-column: 1 / span 1;
-                grid-row: 3 / span 3;
+                grid-column-start: 1 / span 3;
+                grid-row: 3 / span 1;
                 padding-top: 40px;
             }
             img {
@@ -41,6 +47,20 @@
                 background-image: "img/dog_bg.jpeg";
                 background-position: center;
                 background-size: cover;
+            }
+            aside {
+                flex-grow: 1;
+                flex-shrink: 0;
+                flex-basis: 325px;
+                height: 350px;
+                border: 2px solid purple;
+                padding: 10px;
+                margin-top: 4%;
+                margin-bottom: 4%;
+                margin-left: 2%;
+                margin-right: 2%;
+                background-color: #ffffffcf;
+                border-radius: 10px;
             }
             
         </style>
