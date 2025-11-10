@@ -8,6 +8,7 @@
         <meta name="author" content="Meredith Sauer">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>MPLS Dogboarding </title>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         <style>
             #container {
                 display: grid;
@@ -21,18 +22,14 @@
                     "footer footer footer";
             }
             header {
-               grid-column: 1 / span 3;
-               grid-row: 1 / span 1;
+               grid-area: header;
                            
             }
             main {
-                grid-column: 1 / span 3;
-                grid-row: 2 / span 1;
-                border-width: 10px;
+                grid-area: main;
             }
             footer {
-                grid-column-start: 1 / span 3;
-                grid-row: 3 / span 1;
+                grid-area: footer;
                 padding-top: 40px;
             }
             img {
@@ -44,7 +41,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 width: 100%;
-                background-image: "img/dog_bg.jpeg";
+                background-image: url("img/dog_bg.jpeg");
                 background-position: center;
                 background-size: cover;
             }
@@ -61,6 +58,15 @@
                 margin-right: 2%;
                 background-color: #ffffffcf;
                 border-radius: 10px;
+                float: left;
+            }
+            body {
+                font-family: 'Montserrat', sans-serif;
+                margin: 0;
+            }
+            #copyright {
+                width: 275px;
+                margin: auto;
             }
             
         </style>
